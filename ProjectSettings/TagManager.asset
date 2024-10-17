@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FrontWheel
+  - RearWheel
+  - Chankshaft
+  - Seat
+  - BikeFrame
   layers:
   - Default
   - TransparentFX
@@ -11,10 +16,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Front Wheel
+  - Rear Wheel
+  - Seat
+  - Chank
   - 
   - 
   - 
