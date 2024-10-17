@@ -9,6 +9,7 @@ TagManager:
   - Chankshaft
   - Seat
   - BikeFrame
+  - Obstacle
   layers:
   - Default
   - TransparentFX

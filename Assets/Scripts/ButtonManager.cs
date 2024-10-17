@@ -29,6 +29,7 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+
     public void Assembly()
     {
         SceneManager.LoadScene("Assembly");
@@ -48,13 +49,19 @@ public class ButtonManager : MonoBehaviour
     {
         button.SetActive(false);
         menuPanel.SetActive(true);
-        Time.timeScale = 0;
+        Time.timeScale = 0f;
     }
 
     public void ResumeGame()
     {
         button.SetActive(true);
         menuPanel.SetActive(false);
-        Time.timeScale = 1;
+        Time.timeScale = 1f;
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
     }
 }
