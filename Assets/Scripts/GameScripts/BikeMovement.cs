@@ -2,53 +2,64 @@ using UnityEngine;
 
 public class BikeController : MonoBehaviour
 {
-    [SerializeField] float maxSpeed = 10f;
-    [SerializeField] float acceleration = 2f;
-    [SerializeField] float deceleration = 5f;
-    [SerializeField] float minSpeed = 0f;
-    Rigidbody2D rb;
-    float currentSpeed = 0f;
+    [Header("References")]
+    public WheelJoint2D frontWheel;
+    public WheelJoint2D backWheel;
 
-    [SerializeField] GameObject gameOverPanel;
-    [SerializeField] GameObject pauseButton;
+    [Header("Bike Properties")]
+    public float accelerationForce = 200f;
+    public float brakeForce = 300f;
+    public float maxSpeed = 15f;
+    public float rotationSpeed = 200f;
 
-    void Start()
+    private Rigidbody2D rb;
+
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        MoveBike();
+        HandleMotor();
+        HandleRotation();
     }
 
-
-    private void MoveBike()
+    private void HandleMotor()
     {
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        float motorSpeed = 0f;
+
+        float input = Input.GetAxis("Horizontal");
+
+        if (input > 0)
         {
-            currentSpeed -= deceleration * Time.fixedDeltaTime;
+            motorSpeed = -accelerationForce;
         }
-        else if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        else if (input < 0)
         {
-            currentSpeed += acceleration * Time.fixedDeltaTime;
+            motorSpeed = accelerationForce;
         }
-        else
+
+        if (Mathf.Abs(rb.velocity.x) > maxSpeed)
         {
-            currentSpeed -= deceleration/1.5f * Time.fixedDeltaTime;
+            motorSpeed = 0f;
         }
-        currentSpeed = Mathf.Clamp(currentSpeed, minSpeed, maxSpeed);
-        rb.velocity = new Vector2(currentSpeed, rb.velocity.y);
+
+        JointMotor2D motor = backWheel.motor;
+        motor.motorSpeed = motorSpeed;
+        motor.maxMotorTorque = Mathf.Abs(motorSpeed) > 0 ? brakeForce : accelerationForce;
+        backWheel.motor = motor;
+
+        backWheel.useMotor = input != 0;
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void HandleRotation()
     {
-        if (other.gameObject.CompareTag("Obstacle"))
-        {
-            Time.timeScale = 0f;
-            gameOverPanel.SetActive(true);
-            pauseButton.SetActive(false);
+        float rotationInput = Input.GetAxis("Vertical");
 
+        if (rotationInput != 0)
+        {
+            rb.AddTorque(-rotationInput * rotationSpeed * Time.fixedDeltaTime);
         }
     }
 }

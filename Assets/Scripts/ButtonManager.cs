@@ -25,9 +25,19 @@ public class ButtonManager : MonoBehaviour
     }
 
 
-    public void PlayGame()
+    public void Level1()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Level 1");
+    }
+
+    public void Level2()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
+
+    public void Level3()
+    {
+        SceneManager.LoadScene("Level 3");
     }
 
     public void Assembly()
@@ -38,6 +48,7 @@ public class ButtonManager : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
     }
 
     public void ExitGame()
