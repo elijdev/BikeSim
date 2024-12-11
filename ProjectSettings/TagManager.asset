@@ -10,6 +10,7 @@ TagManager:
   - Seat
   - BikeFrame
   - Obstacle
+  - Collidable
   layers:
   - Default
   - TransparentFX

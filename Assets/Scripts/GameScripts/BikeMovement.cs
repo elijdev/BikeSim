@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BikeController : MonoBehaviour
 {
@@ -60,6 +61,14 @@ public class BikeController : MonoBehaviour
         if (rotationInput != 0)
         {
             rb.AddTorque(-rotationInput * rotationSpeed * Time.fixedDeltaTime);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Collidable"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
