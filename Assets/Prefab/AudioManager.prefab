@@ -89,7 +89,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: moving
     clip: {fileID: 8300000, guid: 9ed5f39a5fe219e4b80ede20e012eb3b, type: 3}
-    volume: 1
-    pitch: 1
+    volume: 0.2
+    pitch: 0.4
     loop: 1
     source: {fileID: 0}

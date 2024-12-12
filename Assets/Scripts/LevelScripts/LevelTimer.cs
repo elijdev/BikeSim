@@ -21,11 +21,11 @@ public class LevelTimer : MonoBehaviour
         float bestTime = PlayerPrefs.GetFloat(levelKey, float.MaxValue);
         if (bestTime != float.MaxValue)
         {
-            bestTimeText.text = "Best Time: " + FormatTime(bestTime);
+            bestTimeText.text = "Time to Beat: " + FormatTime(bestTime);
         }
         else
         {
-            bestTimeText.text = "Best Time: --:--:--";
+            bestTimeText.text = "Time to Beat: --:--:--";
         }
 
         timerText.text = "Current Time: " + FormatTime(0f);
@@ -55,8 +55,8 @@ public class LevelTimer : MonoBehaviour
         {
             PlayerPrefs.SetFloat(levelKey, elapsedTime);
             PlayerPrefs.Save();
-            bestTimeText.text = "Best Time: " + FormatTime(elapsedTime);
-            Debug.Log($"New Best Time: {FormatTime(elapsedTime)}");
+            bestTimeText.text = "Time to Beat: " + FormatTime(elapsedTime);
+            Debug.Log($"New Time to Beat: {FormatTime(elapsedTime)}");
         }
         else
         {
@@ -66,7 +66,7 @@ public class LevelTimer : MonoBehaviour
 
     private void UpdateTimerDisplay(float time)
     {
-        timerText.text = "Current Time: " + FormatTime(time);
+        timerText.text = "Time: " + FormatTime(time);
     }
 
     private string FormatTime(float time)
