@@ -15,6 +15,7 @@ public class BikeController : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isBraking = false;
+    private bool isPlayingMovingSound = false;
 
     private void Start()
     {
@@ -25,6 +26,7 @@ public class BikeController : MonoBehaviour
     {
         HandleMotor();
         HandleRotation();
+        HandleMovingSound();
     }
 
     private void HandleMotor()
@@ -72,6 +74,27 @@ public class BikeController : MonoBehaviour
         if (rotationInput != 0)
         {
             rb.AddTorque(-rotationInput * rotationSpeed * Time.fixedDeltaTime);
+        }
+    }
+
+    private void HandleMovingSound()
+    {
+        // Check if the bike is moving
+        if (rb.velocity.magnitude > 0.1f)
+        {
+            if (!isPlayingMovingSound)
+            {
+                FindObjectOfType<AudioManager>().Play("moving");
+                isPlayingMovingSound = true;
+            }
+        }
+        else
+        {
+            if (isPlayingMovingSound)
+            {
+                FindObjectOfType<AudioManager>().Stop("moving");
+                isPlayingMovingSound = false;
+            }
         }
     }
 

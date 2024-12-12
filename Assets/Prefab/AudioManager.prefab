@@ -46,19 +46,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: introBGM
-    clip: {fileID: 8300000, guid: 023b37502d7e4334fb0cf9599c3f71df, type: 3}
+    clip: {fileID: 8300000, guid: 86fec185fd91641499e9a91885df95bd, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: assemblyBGM
-    clip: {fileID: 8300000, guid: 969222eb5655e8e4b9c6adda3074a699, type: 3}
+    clip: {fileID: 8300000, guid: 26d92ba2c0fca474ab6aeff5acd1215b, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: gameBGM
-    clip: {fileID: 8300000, guid: 2f931bd722592174d925ca44c101428a, type: 3}
+    clip: {fileID: 8300000, guid: c7126272bae447e4daed995148abc4bb, type: 3}
     volume: 1
     pitch: 1
     loop: 1
@@ -70,7 +70,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: victory
-    clip: {fileID: 8300000, guid: 6992bc6186982c440b8fd091ad78bc9c, type: 3}
+    clip: {fileID: 8300000, guid: e3945e955e3012b4eac7b387d7374be9, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -82,8 +82,14 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: brake
-    clip: {fileID: 8300000, guid: b72f1c900dffa0042b407b2b6b44ff80, type: 3}
+    clip: {fileID: 8300000, guid: fb161e493c531c642b1436dd2494202f, type: 3}
     volume: 1
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: moving
+    clip: {fileID: 8300000, guid: 9ed5f39a5fe219e4b80ede20e012eb3b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
