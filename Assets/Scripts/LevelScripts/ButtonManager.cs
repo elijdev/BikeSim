@@ -106,4 +106,10 @@ public class ButtonManager : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("click");
     }
+
+    public void ResetRecord()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+    }
 }
