@@ -16,6 +16,7 @@ public class BikeController : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isBraking = false;
+    private bool isMovingSFX = false;
     private float currentSpeed = 0f;
 
     private void Start()
@@ -67,7 +68,16 @@ public class BikeController : MonoBehaviour
 
         if (Mathf.Abs(rb.velocity.x) > 0.1f && !isBraking)
         {
-            FindObjectOfType<AudioManager>().Play("moving");
+            if (!isMovingSFX)
+            {
+                FindObjectOfType<AudioManager>().Play("moving");
+                isMovingSFX = true;
+            }
+        }
+        else
+        {
+            isMovingSFX = false;
+            FindObjectOfType<AudioManager>().Stop("moving");
         }
     }
 
