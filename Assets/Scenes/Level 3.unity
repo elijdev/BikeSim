@@ -1880,58 +1880,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 211902946887907604, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_Size.x
-      value: 4.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 211902946887907604, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_Size.y
-      value: 2.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 211902946887907604, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 4c115d1346cf031449bed5f90b1787c2, type: 3}
-    - target: {fileID: 211902946887907604, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1225650194726535659, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_Name
-      value: Chank
-      objectReference: {fileID: 0}
-    - target: {fileID: 3483392264368504582, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 4.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 3483392264368504582, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 2.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 3483392264368504582, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 4.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 3483392264368504582, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 3852141953808667739, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 4.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 3852141953808667739, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 2.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 3852141953808667739, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 4.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 3852141953808667739, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.87
-      objectReference: {fileID: 0}
     - target: {fileID: 5889767612010994919, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.51
@@ -1975,38 +1923,6 @@ PrefabInstance:
     - target: {fileID: 6113838405464143830, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
       propertyPath: m_Name
       value: BikeFrame
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808305305328810203, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_Size.x
-      value: 3.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808305305328810203, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_Size.y
-      value: 4.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808305305328810203, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 28ee2ca1333576c4aa771b0fcebfe73d, type: 3}
-    - target: {fileID: 7808305305328810203, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8476761122694039826, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_Size.x
-      value: 4.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 8476761122694039826, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_Size.y
-      value: 3.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 8476761122694039826, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 919a39c000faed24e9dc2f66b8b82a29, type: 3}
-    - target: {fileID: 8476761122694039826, guid: 0826d456de698084f9687b8dc4096dd4, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

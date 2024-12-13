@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "BikePartsData", menuName = "Bike/BikePartsData")]
+[CreateAssetMenu(fileName = "BikePartsData", menuName = "Sprites/Bike")]
 public class BikePartsData : ScriptableObject
 {
     public Sprite frameSprite;
