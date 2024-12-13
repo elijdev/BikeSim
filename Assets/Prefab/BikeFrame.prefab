@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2435194075263087955}
   - component: {fileID: 8476761122694039826}
   m_Layer: 0
-  m_Name: ChankShaft
+  m_Name: Chank
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -157,15 +157,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: a09319ee4cd4a0c4bb018faa29627528, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 919a39c000faed24e9dc2f66b8b82a29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.16, y: 3.39}
+  m_Size: {x: 4.98, y: 3.22}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &3590494653926264601
@@ -241,15 +241,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 75034a2c6430c0444a74422dfb9c9222, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 28ee2ca1333576c4aa771b0fcebfe73d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.69, y: 4.44}
+  m_Size: {x: 3.59, y: 4.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4321349077066919616
@@ -432,7 +432,7 @@ Transform:
   m_GameObject: {fileID: 6113838405464143830}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.4582, y: 4.6197, z: 0}
+  m_LocalPosition: {x: -10.51, y: 4.52, z: 0}
   m_LocalScale: {x: 0.32136276, y: 0.32136276, z: 0.32136276}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -484,15 +484,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 68be54578d9d2b14384b38e9a4a98e71, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c115d1346cf031449bed5f90b1787c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.91, y: 3.06}
+  m_Size: {x: 4.69, y: 2.87}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!60 &3483392264368504582
@@ -531,8 +531,8 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.91, y: 3.06}
-    newSize: {x: 4.91, y: 3.06}
+    oldSize: {x: 4.69, y: 2.87}
+    newSize: {x: 4.69, y: 2.87}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -770,8 +770,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.91, y: 3.06}
-    newSize: {x: 4.91, y: 3.06}
+    oldSize: {x: 4.69, y: 2.87}
+    newSize: {x: 4.69, y: 2.87}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
