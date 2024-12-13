@@ -3,19 +3,37 @@ using UnityEngine;
 public class AssemblyManager : MonoBehaviour
 {
     public BikePartsData bikePartsData;
+    public SpriteRenderer frameRenderer;
+    public SpriteRenderer frontWheelRenderer;
+    public SpriteRenderer rearWheelRenderer;
 
-    public void SetFrameSprite(Sprite newFrame)
+    public void SetFrameSprite(Sprite frameSprite)
     {
-        bikePartsData.frameSprite = newFrame;
+        bikePartsData.frameSprite = frameSprite;
+        frameRenderer.sprite = frameSprite;
     }
 
-    public void SetWheelsSprite(Sprite newWheels)
+    public void SetFrontWheelSprite(Sprite frontWheelSprite)
     {
-        bikePartsData.wheelsSprite = newWheels;
+        bikePartsData.frontWheelSprite = frontWheelSprite;
+        frontWheelRenderer.sprite = frontWheelSprite;
     }
 
-    public void SetCrankshaftSprite(Sprite newCrankshaft)
+    public void SetRearWheelSprite(Sprite rearWheelSprite)
     {
-        bikePartsData.crankshaftSprite = newCrankshaft;
+        bikePartsData.rearWheelSprite = rearWheelSprite;
+        rearWheelRenderer.sprite = rearWheelSprite;
+    }
+
+    public void RevertToDefault()
+    {
+        bikePartsData.frameSprite = bikePartsData.defaultFrameSprite;
+        bikePartsData.frontWheelSprite = bikePartsData.defaultFrontWheelSprite;
+        bikePartsData.rearWheelSprite = bikePartsData.defaultRearWheelSprite;
+        frontWheelRenderer.sprite = bikePartsData.defaultFrontWheelSprite;
+        rearWheelRenderer.sprite = bikePartsData.defaultRearWheelSprite;
+        frameRenderer.sprite = bikePartsData.defaultFrameSprite;
+
+        Debug.Log("Reverted to default sprites");
     }
 }

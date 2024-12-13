@@ -813,8 +813,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bikePartsData: {fileID: 11400000, guid: 925c2558d2c86d041ad7a8d74d27482e, type: 2}
   frameRenderer: {fileID: 211902946887907604}
-  wheelsRenderer: {fileID: 2418525510266875579}
-  crankshaftRenderer: {fileID: 8476761122694039826}
+  frontWheelRenderer: {fileID: 6449354917125029118}
+  rearWheelRenderer: {fileID: 2418525510266875579}
 --- !u!1 &7937862030483698983
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,10 @@ using UnityEngine;
 public class BikePartsData : ScriptableObject
 {
     public Sprite frameSprite;
-    public Sprite wheelsSprite;
-    public Sprite crankshaftSprite;
+    public Sprite frontWheelSprite;
+    public Sprite rearWheelSprite;
+
+    public Sprite defaultFrameSprite;
+    public Sprite defaultFrontWheelSprite;
+    public Sprite defaultRearWheelSprite;
 }
