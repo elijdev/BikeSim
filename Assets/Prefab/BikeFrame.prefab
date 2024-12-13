@@ -416,6 +416,7 @@ GameObject:
   - component: {fileID: 7735479146257106091}
   - component: {fileID: 3852141953808667739}
   - component: {fileID: 2977520516999537471}
+  - component: {fileID: 8896992582349702702}
   m_Layer: 0
   m_Name: BikeFrame
   m_TagString: Player
@@ -793,11 +794,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frontWheel: {fileID: 7735479146257106091}
   backWheel: {fileID: 7874545062322764963}
-  accelerationForce: 200
+  accelerationForce: 300
   brakeForce: 3000
-  maxSpeed: 600
+  maxSpeed: 800
   rotationSpeed: 10000
-  accelerationRate: 200
+  accelerationRate: 300
+--- !u!114 &8896992582349702702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6113838405464143830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c667fadd901ffc842972a18a9934151c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bikePartsData: {fileID: 11400000, guid: 925c2558d2c86d041ad7a8d74d27482e, type: 2}
+  frameRenderer: {fileID: 211902946887907604}
+  wheelsRenderer: {fileID: 2418525510266875579}
+  crankshaftRenderer: {fileID: 8476761122694039826}
 --- !u!1 &7937862030483698983
 GameObject:
   m_ObjectHideFlags: 0
