@@ -28,6 +28,7 @@ public class ButtonManager : MonoBehaviour
     public void Level1()
     {
         FindObjectOfType<AudioManager>().Stop("introBGM");
+        FindObjectOfType<AudioManager>().Stop("assemblyBGM");
         FindObjectOfType<AudioManager>().Stop("victory");
         FindObjectOfType<AudioManager>().Play("gameBGM");
         FindObjectOfType<AudioManager>().Stop("moving");
@@ -38,6 +39,7 @@ public class ButtonManager : MonoBehaviour
     public void Level2()
     {
         FindObjectOfType<AudioManager>().Stop("introBGM");
+        FindObjectOfType<AudioManager>().Stop("assemblyBGM");
         FindObjectOfType<AudioManager>().Stop("victory");
         FindObjectOfType<AudioManager>().Play("gameBGM");
         FindObjectOfType<AudioManager>().Stop("moving");
@@ -48,6 +50,7 @@ public class ButtonManager : MonoBehaviour
     public void Level3()
     {
         FindObjectOfType<AudioManager>().Stop("introBGM");
+        FindObjectOfType<AudioManager>().Stop("assemblyBGM");
         FindObjectOfType<AudioManager>().Stop("victory");
         FindObjectOfType<AudioManager>().Play("gameBGM");
         FindObjectOfType<AudioManager>().Stop("moving");
